@@ -31,7 +31,7 @@ function recipe_init(){
 		'hierarchical'       => false,
 		'menu_position'      => null,
 		'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
-    'taxonomies'        =>  array('category','post_tag');
+    'taxonomies'        =>  array('category','post_tag')
 	);
 
   register_post_type( 'recipe', $args );
