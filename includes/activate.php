@@ -9,10 +9,10 @@ function spnin_activate_plugin(){
   //$charset_collate = $wpdb->get_charset_collate();
   $creatsql ="
       CREATE TABLE `".$wpdb->prefix."recipe_ratings` (
-      `id` int(11) NOT NULL,
+      `id` int(11) NOT NULL AUTO_INCREMENT  PRIMARY KEY,
       `recipe_id` bigint(20) NOT NULL,
       `rating` float NOT NULL,
-      `user_id` varchar(32) NOT NULL
+      `user_ip` varchar(32) NOT NULL
     ) ENGINE=InnoDB ".$wpdb->get_charset_collate().";
     ";
 
